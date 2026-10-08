@@ -1,7 +1,7 @@
-[README_V1.md](https://github.com/user-attachments/files/33196393/README_V1.md)
-# a4_photo_layout_v1
+[README_V3.md](https://github.com/user-attachments/files/33196393/README_V3.md)
+# a4_photo_layout_V3
 A4 图片排版输出 PDF(可退回操作)
-# A4 照片排版工具 V1
+# A4 照片排版工具 V3
 
 在原 V2 的基础上加上&#x4E86;**「导出的 PDF 可以再导入回来继续编辑」**、  
 **「排版可选 1×1 / 2×2 / 3×3 …（默认 3×3）」**，并顺手修掉了几个会影响出片质量的毛病。
@@ -10,15 +10,15 @@ A4 图片排版输出 PDF(可退回操作)
 
 | 文件                            | 说明                                           |
 | ----------------------------- | -------------------------------------------- |
-| `a4_photo_layout_V1.py`       | 主程序，单文件、自包含（PDF 读写引擎直接内置，不需要额外装 PDF 库）       |
+| `a4_photo_layout_V3.py`       | 主程序，单文件、自包含（PDF 读写引擎直接内置，不需要额外装 PDF 库）       |
 | `tests/test_pdf_roundtrip.py` | 无界面回归测试：导出 → 导入 → 再编辑、第三方 PDF 导入、排版选项，81 项检查 |
 | `screenshots/`                | 界面截图                                         |
-| `README_V1.md`                | 本说明                                          |
+| `README_V3.md`                | 本说明                                          |
 
 ## 运行
 
 ```bat
-py -3 a4_photo_layout_V1.py
+py -3 a4_photo_layout_V3.py
 ```
 
 依赖：
@@ -116,7 +116,7 @@ py -3 -m pip install pillow tkinterdnd2 pywin32 numpy
 
 典型用法：把 4 张照片排成 2×2 时，选 2×2 → 4 张正好一页，照片比 3×3 大很多。
 
-## V1 相对 V2 的修正
+## V3 相对 V2 的修正
 
 1. **竖拍手机照片不再被拉伸**——V2 记录宽高时没算 EXIF 方向，渲染时又转正了图片，  
    两者不一致；现在统一按「转正之后」的尺寸记录。
