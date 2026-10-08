@@ -1,5 +1,4 @@
 [README.md](https://github.com/user-attachments/files/33196979/README.md)
-# -*- coding: utf-8 -*-
 # 运行：py -3 make_readme.py
 # 会在当前目录生成 README.md
 
