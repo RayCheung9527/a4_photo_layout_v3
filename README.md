@@ -1,5 +1,5 @@
 # A4 照片排版工具 V3
-!界面.png
+![界面.png]https://github.com/RayCheung9527/a4_photo_layout_v3/blob/a1bbc6ffac2d599f699b4ea5c6c3a6b450d75b1b/%E7%95%8C%E9%9D%A2.png
 一个 Windows 下的 A4 照片排版小工具：把一批照片按网格排到 A4 页面上，导出为 PDF 或直接打印。
 **导出的 PDF 可以再拖回来继续编辑**（保留原图路径、顺序、旋转、排版），
 也能导入别的软件生成的图片型 PDF（扫描件、水印相机照片表等）并拆回成照片。
